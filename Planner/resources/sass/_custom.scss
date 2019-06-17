@@ -1,0 +1,143 @@
+body{
+    //background: teal !important;
+    font-size: medium;
+    font-family: monospace !important;
+}
+
+main{
+    padding: 0 !important;
+}
+
+.container{
+    width: inherit;
+    height: inherit;
+    padding: 5%;
+    margin: 0;
+}
+
+.header{
+    height: 5%;
+    width: 100%;
+    padding: 0 !important;
+    .col-3{
+        padding:0 !important;
+    };
+    .cancel{
+        height: inherit;
+    }
+    .iconclose{
+        height: inherit;
+    }
+}
+
+.scrollday{
+    background-color: $lightgrey;
+    padding-top:10px;
+    padding-bottom:5px;
+    border-left-style: solid;
+    border-left-color:lightgray;
+    border-left-width: 5px;
+
+}
+
+.taskscontainer{
+    width: inherit;
+    height: inherit;
+    padding: 0 !important;
+    padding-top: 0;
+    margin: 0;
+}
+
+.userbadge{
+    border-radius: 55%;
+    width: 60%;
+    padding: 10%;
+}
+
+.tasks.container{
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+
+}
+
+.scrollitem{
+    border-left-style: solid;
+    border-left-color: red;
+    border-left-width: 5px;
+}
+
+.col-9,.col-6, .col-8, .col-4, .col-3, .col-5, .col-2, .col-10{
+    padding: 0;
+}
+
+  .badgee {
+    position: absolute !important;
+    font-size: 2rem;
+    top: 11%;
+    right: 47%;
+    padding: 0.1px 13px;
+    background-color:teal;
+    border-radius: 50%;
+    color: white;
+  }
+
+  .badgee:hover {
+    background: black;
+  }
+
+  .form-group{
+      .tealbutton{
+          margin-top: 10%;
+      }
+  }
+
+html{
+    width: 400px;
+    height: 720px;
+}
+
+p,a, a:link, a:visited, a:hover, a:active{
+    text-decoration: none;
+    color: grey;
+}
+
+.row{
+    width: 100% !important;
+    margin: 0;
+    padding-top: 3%;
+}
+
+.tealbutton{
+    width: 100% !important;
+    background-color: $teal;
+    border: none;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.authbottomtext{
+    font-size:small;
+}
+
+input{
+    width: 100% !important;
+    border-bottom: 2px solid grey;
+}
+
+form{
+    width: 100%;
+}
+
+
+
+.group{
+    width: 100% !important;
+    padding: 0;
+}
+
+.forgotPassword{
+    border-bottom: 2px solid gray;
+}
