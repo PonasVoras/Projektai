@@ -1,10 +1,11 @@
-# Projektai 
+﻿# Projektai 
 
 - CompanyApp aplikacija, pure php, bitnami wamp
+  Aplikacijoje veikia CRUD modelis, minimalus dizainas naudojant bootstrap. Naudojama MySQL duomenų bazė.
 
 - Planner aplikacija, laravel, bitnami wamp
   Trumpas aprašymas :
-    Aplikacijoje trūksta užbaigtumo, ji nėra galutinė
+    Aplikacija nėra galutinė
     Naudotojas gali sukurti naują vartotoją, prisijungti. Vartotojas gali matyti tik savo ToDo darbus, juos vykdyti. Kiekvienam laukui taikoma validacija ir apie neteisingus duomenis pranešama. Kiekvienas veiksmas veikia REST architektūra, tiek vartotojo veiksmai, tiek todo veiksmai. Administratoriaus prisijungimas kol kas nėra galimas. 
     
   Naudojami keturi kontroleriai :

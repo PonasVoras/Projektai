@@ -10,15 +10,17 @@ $comment = $_POST['comment'];
 $registration_code = $_POST['registration_code'];
 $id = 0;
 $update = false;
+$errors = [];
 // update boolean is for session messages
 
-
 if (isset($_POST['save'])) {
-    $query= "INSERT INTO companies (name, registration_code, email, phone, comment ) VALUES ('$name', '$registration_code', '$email', '$phone', '$comment')";
-    mysqli_query($db, $query);
-    $_SESSION['message'] = "Company added"; 
-    header('location: /views/home.php');
+        $query= "INSERT INTO companies (name, registration_code, email, phone, comment ) VALUES ('$name', '$registration_code', '$email', '$phone', '$comment')";
+        mysqli_query($db, $query);
+        $_SESSION['message'] = "Company added"; 
+        header('location: /views/home.php');
 }
+
+
 
 if (isset($_POST['update'])) {
 	$id = $_POST['id'];

@@ -29,6 +29,16 @@
 
 </head>
 <body>
+    <?php 
+        
+function debug_to_console( $data ) {
+    $output = $data;
+    if ( is_array( $output ) )
+        $output = implode( ',', $output);
+
+    echo "<script>console.log( 'Debug Objects: " . $output . "' );</script>";
+}
+    ?>
   <div class="container">
     <div class="frontpageImg text-center" >
         <img alt="Companyapp" src="/img/companyapp.png" height="200" width="600"/>
@@ -43,7 +53,6 @@
             ?>
         </div>
     <?php endif ?>
-
         <table class="table table-striped">
             <thead>
                 <tr>
@@ -58,18 +67,18 @@
             </thead>
             <tbody>
                 <?php while ($row = mysqli_fetch_array($results)){ ?>
-                                    <tr >
-                                        <th scope="row"><?php echo $row['id'] ?></th>
-                                        <td class="text-center"><?php echo $row['name'] ?></td>
-                                        <td><?php echo $row['registration_code'] ?></td>
-                                        <td><?php echo $row['email'] ?></td>
-                                        <td><?php echo $row['phone'] ?></td>
-                                        <td><?php echo $row['comment'] ?></td>
-                                    <td>
-                                        <a href="../storage/server.php?del=<?php echo $row['id']; ?>" class="del_btn btn">Delete</a>
-                                        <a href="home.php?edit=<?php echo $row['id']; ?>" class="edit_btn btn" >Edit</a>
-                                    </td>
-                                </tr>
+                    <tr >
+                        <th scope="row"><?php echo $row['id'] ?></th>
+                        <td class="text-center"><?php echo $row['name'] ?></td>
+                        <td><?php echo $row['registration_code'] ?></td>
+                        <td><?php echo $row['email'] ?></td>
+                        <td><?php echo $row['phone'] ?></td>
+                        <td><?php echo $row['comment'] ?></td>
+                        <td>
+                            <a href="../storage/server.php?del=<?php echo $row['id']; ?>" class="del_btn btn">Delete</a>
+                                <a href="home.php?edit=<?php echo $row['id']; ?>" class="edit_btn btn" >Edit</a>
+                        </td>
+                    </tr>
               <?php  } ?>
 
             </tbody>
@@ -112,9 +121,11 @@
                                 <button class="btn" type="submit" name="save" >Save</button>
                             <?php endif ?>
                         </div>
-                        <div class="error"><h4>Error field</h4></div>
+                        <div class="error"><h4><?php echo 'Your mail has to be unique'; ?></h4></div>
                     </div>
                 </form>
+
+                
    
 
 </div>

@@ -1,0 +1,5 @@
+-	CSV uploadinimas
+-	telefono validacija
+-	pašto unikalumas
+-	template's, html kodo tvarkymas
+-	saugumas
