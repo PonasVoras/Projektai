@@ -1,0 +1,22 @@
+html{
+    height: 100%;
+}
+
+body{
+    height: inherit;
+}
+
+.container{
+    height: inherit;
+}
+
+.frontpageImg{
+    height: 15%;
+}
+
+.submitbtn{
+    padding-top:65px;
+    width: 100% !important;
+}
+
+
