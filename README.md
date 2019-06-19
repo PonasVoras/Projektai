@@ -1,11 +1,8 @@
 # Projektai 
 
-<<<<<<< HEAD
-- Planner aplikacija, laravel, bitnami wamp
-
 - CompanyApp aplikacija, pure php, bitnami wamp
-=======
-- Planner aplikacija
+
+- Planner aplikacija, laravel, bitnami wamp
   Trumpas aprašymas :
     Aplikacijoje trūksta užbaigtumo, ji nėra galutinė
     Naudotojas gali sukurti naują vartotoją, prisijungti. Vartotojas gali matyti tik savo ToDo darbus, juos vykdyti. Kiekvienam laukui taikoma validacija ir apie neteisingus duomenis pranešama. Kiekvienas veiksmas veikia REST architektūra, tiek vartotojo veiksmai, tiek todo veiksmai. Administratoriaus prisijungimas kol kas nėra galimas. 
@@ -37,4 +34,4 @@
 	  Pagažinti views
 	  Fonts
 	  Responsiveness testing
->>>>>>> cadac5cac7a4eda1b37075e223aaa212960e2ffb
+
